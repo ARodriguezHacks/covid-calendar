@@ -127,6 +127,33 @@ margin-top: 4px;
   background: #1F252F;
 }
 
+.language-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: static;
+    height: 44px;
+    left: 0px;
+    bottom: 0px;
+    border-color: #1F252F;
+    border-style: solid;
+    border-width: 1px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 36px;
+    color:  #1F252F;
+    width: 119px;
+}
+.language-button:hover {
+  color: #FFFFFF;
+  background: #1A5BFF;
+}
 
 .update-button {
     display: flex;
@@ -199,4 +226,14 @@ margin-top: 4px;
 }
 .get-started-link:hover {
     background: #1F252F;
+}
+
+.resourceAnswerText {
+    font-family: Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
 }

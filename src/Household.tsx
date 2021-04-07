@@ -51,7 +51,7 @@ export default function Household(props: Props) {
             {t`Tell us about yourself and each person you live with.`}
           </h2>
           <p
-            className="lead"
+            className="lead pv3"
             style={{
               fontFamily: "Helvetica",
               fontSize: "24px",
@@ -64,7 +64,11 @@ export default function Household(props: Props) {
             }}
           >
             {t`Thank you for doing your part to keep our community safe! For help
-            with a question, tap`} { "[?]"}
+            with a question, tap`}
+            <img
+              src={process.env.PUBLIC_URL + "/circle-question.svg"}
+              style={{ marginLeft: "0.4rem" }}
+            />
           </p>
         </>
       );
@@ -130,7 +134,7 @@ export default function Household(props: Props) {
           className={"col-md-12"}
           style={{
             backgroundColor: "#fff",
-            minHeight: props.height.get() + "px"
+            //minHeight: props.height.get() + "px" TODO:this is to manage the footer placement but has been messed up by other changes and so we're disabling it
           }}
         >
           <div className={"container"}>

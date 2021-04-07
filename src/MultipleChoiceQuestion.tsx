@@ -17,7 +17,7 @@ interface Props {
 
 export default function MultipleChoiceQuestion(props: Props) {
   return (
-    <div className="custom-control custom-checkbox mb-2">
+    <div className="custom-control custom-checkbox mv4">
       <input
         className="custom-control-input"
         checked={props.checked}

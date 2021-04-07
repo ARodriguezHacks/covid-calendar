@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Household from "./Household";
 import Definitions from "./Definitions";
 import Footer from "./Footer";
+import Resources from "./Resources";
 import { t, jt } from 'ttag';
 
 interface Props {
@@ -41,7 +42,7 @@ export default function Recommendation(props: Props) {
             }}
           >
             <Link to="/" className="d-flex align-items-center home-link">{t`COVID CALCULATOR`}</Link>
-            <button onClick={()=> props.setLanguage(props.language==="en" ? "es" : "en")}>
+            <button className="language-button" onClick={()=> props.setLanguage(props.language==="en" ? "es" : "en")}>
               <div>{(props.language==="en" ? "GARBLE" : "ENGLISH")}</div>
             </button>
           </div>
@@ -57,7 +58,25 @@ export default function Recommendation(props: Props) {
             membersState={props.membersState}
           />
         </section>
-        <Definitions/>
+        <div
+          className="container pb-5"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            background: "#F8F8F8",
+            paddingTop: "91px",
+            maxWidth: "100%"
+          }}
+        >
+          <div
+            style={{
+              width: "60%",
+              textAlign: "center"
+            }}
+          >
+            {!props.editingHouseholdState.get() && <Resources/>}
+          </div>
+        </div>
       </main>
       <Footer/>
     </div>

@@ -6,51 +6,38 @@ export default function Definitions() {
   const strongQuarantine = <strong className="our-blue">{t`quarantine`}</strong>
   const strongIsolate = <strong className="our-blue">{t`isolate`}</strong>
   return (
-    <div
-      className="container pb-5"
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        background: "#F8F8F8",
-        paddingTop: "91px",
-        maxWidth: "100%"
-      }}
-    >
-      <div
-        style={{
-          width: "60%",
-          textAlign: "center"
-        }}
-      >
-        <h2>{t`Quarantine vs. Isolation`}</h2>
-        <div className="py-2"></div>
-        <div className="row">
-          <div className="col-md-6  col-sm-12 f3">
-            <div
+        <div className="f4" >
+            <div className="row"
               style={{
                 marginTop: "80px",
-                marginBottom: "60px"
+                marginBottom: "60px",
+                textAlign: "left"
               }}
             >
-              <img src={process.env.PUBLIC_URL + "/quarantine.svg"} />
+              <div className="col-md-9 text-align-left pt3" >
+                {jt`People who must ${strongQuarantine} should avoid physical contact
+                with everyone outside their home. This includes work, groceries, and socializing.`}
+              </div>
+              <div className="col-md-3">
+                <img  src={process.env.PUBLIC_URL + "/quarantine.svg"} />
+              </div>
             </div>
-            {jt`People who must ${strongQuarantine} should avoid physical contact
-            with everyone outside their home. This includes work, groceries, and socializing.`}
-          </div>
-          <div className="col-md-6 col-sm-12 f3">
-            <div
+            <hr/>
+            <div className="row"
               style={{
                 marginTop: "80px",
-                marginBottom: "60px"
+                marginBottom: "60px",
+                textAlign: "left"
               }}
             >
-              <img src={process.env.PUBLIC_URL + "/isolation.svg"} />
-            </div>
-            {jt`People who must ${strongIsolate} should keep away from
-            everyone inside and outside the home.`}
+              <div className="col-md-9 text-align-left pt3" >
+                {jt`People who must ${strongIsolate} should keep away from
+                everyone inside and outside the home.`}
+              </div>
+              <div className="col-md-3">
+               <img src={process.env.PUBLIC_URL + "/isolation.svg"} />
+             </div>
           </div>
         </div>
-      </div>
-    </div>
   )
 }

@@ -20,11 +20,7 @@ msgstr ""
 msgid "isolate"
 msgstr ""
 
-#: src/Definitions.tsx:25
-msgid "Quarantine vs. Isolation"
-msgstr ""
-
-#: src/Definitions.tsx:37
+#: src/Definitions.tsx:18
 #, javascript-format
 msgid ""
 "People who must ${ strongQuarantine } should avoid physical contact\n"
@@ -34,30 +30,31 @@ msgstr ""
 "example\n"
 "multi-line translation."
 
-#: src/Definitions.tsx:49
+#: src/Definitions.tsx:34
 msgid ""
 "People who must ${ strongIsolate } should keep away from\n"
 "everyone inside and outside the home."
 msgstr ""
 
-#: src/Home.tsx:31
+#: src/Home.tsx:32
 msgid ""
 "This calculator determines whether you’ll quarantine or isolate, and for "
 "how long. "
 msgstr ""
 
-#: src/Home.tsx:33
+#: src/Home.tsx:34
 msgid ""
 "Answer a few simple questions and we will match your situation to the best "
 "advice according to CDC guidelines."
 msgstr ""
 
-#: src/Home.tsx:65
+#: src/Home.tsx:62
+#: src/Home.tsx:150
 msgid "Get Started"
 msgstr ""
 
-#: src/Home.tsx:89
-#: src/Recommendation.tsx:43
+#: src/Home.tsx:86
+#: src/Recommendation.tsx:44
 msgid "COVID CALCULATOR"
 msgstr ""
 
@@ -71,7 +68,7 @@ msgid ""
 "with a question, tap"
 msgstr ""
 
-#: src/Household.tsx:174
+#: src/Household.tsx:178
 msgid "Add another person"
 msgstr ""
 
@@ -92,33 +89,33 @@ msgstr ""
 msgid "Date of last contact"
 msgstr ""
 
-#: src/Instructions.tsx:8
+#: src/Instructions.tsx:16
 msgid "How to use this tool"
 msgstr ""
 
-#: src/Instructions.tsx:9
+#: src/Instructions.tsx:17
 msgid "STEP 1"
 msgstr ""
 
-#: src/Instructions.tsx:10
+#: src/Instructions.tsx:18
 msgid "For each person you live with, answer questions about their symptoms."
 msgstr ""
 
-#: src/Instructions.tsx:11
+#: src/Instructions.tsx:21
 msgid "STEP 2"
 msgstr ""
 
-#: src/Instructions.tsx:12
+#: src/Instructions.tsx:22
 msgid ""
 "After inputting your answers, you’ll receive recommendations on what each "
 "person should do to stay safe based on official CDC guidelines."
 msgstr ""
 
-#: src/Instructions.tsx:13
+#: src/Instructions.tsx:26
 msgid "STEP 3"
 msgstr ""
 
-#: src/Instructions.tsx:14
+#: src/Instructions.tsx:27
 msgid "Tap on a recommendation to learn more about the safety behind it."
 msgstr ""
 
@@ -313,15 +310,11 @@ msgstr ""
 msgid "Date of test"
 msgstr ""
 
-#: src/Resources.tsx:5
+#: src/Resources.tsx:12
 msgid "OHA’s test finder map"
 msgstr ""
 
-#: src/Resources.tsx:9
-msgid "I can't affort to quarantine or isolated"
-msgstr ""
-
-#: src/Resources.tsx:10
+#: src/Resources.tsx:20
 msgid ""
 "Help is available! Please call 211 to be connected to COVID-19 specific "
 "resources. Community based organizations can help you with food boxes, "
@@ -329,31 +322,31 @@ msgid ""
 "you are eligible for."
 msgstr ""
 
-#: src/Resources.tsx:11
+#: src/Resources.tsx:21
 msgid "Where do I get a test?"
 msgstr ""
 
-#: src/Resources.tsx:12
+#: src/Resources.tsx:21
 #, javascript-format
 msgid "You can find one using ${ mapLink }."
 msgstr ""
 
-#: src/Resources.tsx:13
+#: src/Resources.tsx:23
 msgid "I have additional questions but no primary care doctor"
 msgstr ""
 
-#: src/Resources.tsx:14
+#: src/Resources.tsx:26
 msgid ""
 "If you are a Clackamas County resident, reach out to a Clackamas County "
 "health center. To set up care or learn more about any of our health clinics "
 "call 503-655-8471.  "
 msgstr ""
 
-#: src/Resources.tsx:17
+#: src/Resources.tsx:29
 msgid "If you are not a resident, we recommend checking your local health centers."
 msgstr ""
 
-#: src/Resources.tsx:18
+#: src/Resources.tsx:30
 msgid ""
 "Clackamas Health Centers offer care on a sliding scale to eligible "
 "uninsured and underinsured people. No one is refused care due to an "
@@ -366,19 +359,19 @@ msgid ""
 "Recommendations follow guidelines from the CDC."
 msgstr ""
 
-#: src/Household.tsx:73
+#: src/Household.tsx:77
 msgid "Clackamas County health center"
 msgstr ""
 
-#: src/Household.tsx:77
+#: src/Household.tsx:81
 msgid "Here’s what to do based on the latest CDC guidelines."
 msgstr ""
 
-#: src/Household.tsx:98
+#: src/Household.tsx:102
 msgid "Done"
 msgstr ""
 
-#: src/Household.tsx:111
+#: src/Household.tsx:115
 msgid "EDIT ANSWERS"
 msgstr ""
 
@@ -389,7 +382,7 @@ msgid ""
 "exact date."
 msgstr ""
 
-#: src/Household.tsx:79
+#: src/Household.tsx:83
 #, javascript-format
 msgid ""
 "If you have further questions, please contact your doctor or a ${ "
@@ -413,4 +406,16 @@ msgstr ""
 msgid ""
 "${ person.name } had close contact to someone COVID-19 positive that does "
 "not live with them"
+msgstr ""
+
+#: src/Resources.tsx:17
+msgid "Resources"
+msgstr ""
+
+#: src/Resources.tsx:19
+msgid "What is the difference between Quarantine and Isolation?"
+msgstr ""
+
+#: src/Resources.tsx:20
+msgid "I can't afford to quarantine or isolate"
 msgstr ""
